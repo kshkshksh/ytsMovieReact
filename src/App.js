@@ -8,7 +8,7 @@ import Index from "./routers/Index";
 
 function App() {
   return (
-    <BrowserRouter basename="/ytsMovieReact">
+    <BrowserRouter basename="/">
       <Navigation />
       <Switch>
         <Route path={"/"} exact={true} component={Home} />
