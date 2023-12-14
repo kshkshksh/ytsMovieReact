@@ -8,7 +8,7 @@ import Index from "./routers/Index";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/"> //basename 사용
       <Navigation />
       <Switch>
         <Route path={"/"} exact={true} component={Home} />
