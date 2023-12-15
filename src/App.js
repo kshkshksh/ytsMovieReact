@@ -8,10 +8,10 @@ import Index from "./routers/Index";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Switch>
-        <Route path={"/"} exact={true} component={Home} />
+        <Route exact path={"/"} component={Home} />
         <Route path={"/index"} component={Index} />
         <Route path={"/list"} component={Home} />
         <Route path={"/about"} component={About} />
