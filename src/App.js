@@ -8,7 +8,7 @@ import Index from "./routers/Index";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename='ytsMovieReact'>
       <Navigation />
       <Switch>
         <Route exact path={"/"} component={Home} />
